@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Figura con Variable CSS</title>
+
+    <style>
+        .figura {
+            --lado: 120px;
+            width: calc(var(--lado) * 1.5);
+            height: var(--lado);
+            background-color: #ff7043;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Rectángulo con CSS</h1>
+
+<div class="figura"></div>
+
+</body>
+</html>

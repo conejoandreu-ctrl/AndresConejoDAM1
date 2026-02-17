@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reloj animado</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #222;
+            font-family: Arial, sans-serif;
+        }
+
+        .reloj {
+            width: 250px;
+            height: 250px;
+            border: 8px solid #fff;
+            border-radius: 50%;
+            position: relative;
+            background: #111;
+        }
+
+        .centro {
+            width: 14px;
+            height: 14px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+
+        .aguja {
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform-origin: bottom center;
+            transform: translateX(-50%) rotate(0deg);
+            border-radius: 4px;
+        }
+
+        .hora {
+            width: 6px;
+            height: 60px;
+            background: #fff;
+            animation: girarHora 43200s linear infinite;
+        }
+
+        .minuto {
+            width: 4px;
+            height: 90px;
+            background: #ddd;
+            animation: girarMinuto 3600s linear infinite;
+        }
+
+        .segundo {
+            width: 2px;
+            height: 100px;
+            background: #ff5252;
+            animation: girarSegundo 60s linear infinite;
+        }
+
+        @keyframes girarHora {
+            from { transform: translateX(-50%) rotate(0deg); }
+            to   { transform: translateX(-50%) rotate(360deg); }
+        }
+
+        @keyframes girarMinuto {
+            from { transform: translateX(-50%) rotate(0deg); }
+            to   { transform: translateX(-50%) rotate(360deg); }
+        }
+
+        @keyframes girarSegundo {
+            from { transform: translateX(-50%) rotate(0deg); }
+            to   { transform: translateX(-50%) rotate(360deg); }
+        }
+
+        .marca {
+            position: absolute;
+            width: 4px;
+            height: 15px;
+            background: #fff;
+            top: 5px;
+            left: 50%;
+            transform-origin: center 120px;
+        }
+
+        .m1  { transform: translateX(-50%) rotate(0deg); }
+        .m2  { transform: translateX(-50%) rotate(30deg); }
+        .m3  { transform: translateX(-50%) rotate(60deg); }
+        .m4  { transform: translateX(-50%) rotate(90deg); }
+        .m5  { transform: translateX(-50%) rotate(120deg); }
+        .m6  { transform: translateX(-50%) rotate(150deg); }
+        .m7  { transform: translateX(-50%) rotate(180deg); }
+        .m8  { transform: translateX(-50%) rotate(210deg); }
+        .m9  { transform: translateX(-50%) rotate(240deg); }
+        .m10 { transform: translateX(-50%) rotate(270deg); }
+        .m11 { transform: translateX(-50%) rotate(300deg); }
+        .m12 { transform: translateX(-50%) rotate(330deg); }
+    </style>
+</head>
+<body>
+
+<div class="reloj">
+    <div class="marca m1"></div>
+    <div class="marca m2"></div>
+    <div class="marca m3"></div>
+    <div class="marca m4"></div>
+    <div class="marca m5"></div>
+    <div class="marca m6"></div>
+    <div class="marca m7"></div>
+    <div class="marca m8"></div>
+    <div class="marca m9"></div>
+    <div class="marca m10"></div>
+    <div class="marca m11"></div>
+    <div class="marca m12"></div>
+
+    <div class="aguja hora"></div>
+    <div class="aguja minuto"></div>
+    <div class="aguja segundo"></div>
+    <div class="centro"></div>
+</div>
+
+</body>
+</html>

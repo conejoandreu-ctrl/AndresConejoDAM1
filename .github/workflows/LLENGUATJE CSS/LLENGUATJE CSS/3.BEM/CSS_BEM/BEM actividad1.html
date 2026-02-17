@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Barra Superior con Navegación</title>
+
+    <style>
+        header {
+            background-color: #e8e8e8;
+            padding: 12px 25px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .marca {
+            font-size: 1.4em;
+            font-weight: bold;
+            color: #b03a2e;
+        }
+
+        nav a {
+            margin: 0 8px;
+            text-decoration: none;
+            color: #444;
+        }
+
+        nav a:hover {
+            color: #b03a2e;
+        }
+
+        .busqueda input {
+            padding: 6px;
+            border: 1px solid #bbb;
+            border-radius: 3px;
+        }
+
+        .busqueda button {
+            padding: 6px 12px;
+            background-color: #b03a2e;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .busqueda button:hover {
+            background-color: #922b21;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="marca">WebLogo</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#productos">Productos</a>
+        <a href="#blog">Blog</a>
+        <a href="#ayuda">Ayuda</a>
+    </nav>
+
+    <form class="busqueda" action="#" method="get">
+        <input type="text" placeholder="Buscar...">
+        <button type="submit">Ir</button>
+    </form>
+</header>
+
+</body>
+</html>

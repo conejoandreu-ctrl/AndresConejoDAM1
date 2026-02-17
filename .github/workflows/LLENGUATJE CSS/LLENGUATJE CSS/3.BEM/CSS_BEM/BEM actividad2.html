@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Zona de Opiniones</title>
+
+    <style>
+        body {
+            font-family: Verdana, sans-serif;
+            background-color: #f0f0f0;
+            padding: 25px;
+        }
+
+        .formulario {
+            margin-bottom: 25px;
+        }
+
+        .formulario input,
+        .formulario textarea {
+            width: 100%;
+            padding: 7px;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            margin-bottom: 8px;
+        }
+
+        .formulario button {
+            background-color: #d35400;
+            color: white;
+            border: none;
+            padding: 7px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .formulario button:hover {
+            background-color: #a84300;
+        }
+
+        .lista-comentarios {
+            border-top: 2px solid #aaa;
+            padding-top: 12px;
+        }
+
+        .item {
+            background-color: #ffffff;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            border: 1px solid #ddd;
+        }
+
+        .item h4 {
+            margin: 0 0 6px 0;
+            color: #d35400;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Zona de Opiniones</h1>
+
+<div class="formulario">
+    <input type="text" placeholder="Escribe tu nombre">
+    <textarea rows="4" placeholder="Tu comentario"></textarea>
+    <button>Publicar</button>
+</div>
+
+<div class="lista-comentarios">
+    <div class="item">
+        <h4>Lucía</h4>
+        <p>Muy buen contenido, me ha gustado mucho.</p>
+    </div>
+
+    <div class="item">
+        <h4>Javier</h4>
+        <p>Gracias por compartir esta información.</p>
+    </div>
+</div>
+
+</body>
+</html>

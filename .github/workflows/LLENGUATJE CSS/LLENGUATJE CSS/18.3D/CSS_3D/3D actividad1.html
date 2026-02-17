@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover 3D</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+        }
+
+        .contenedor {
+            perspective: 800px;
+        }
+
+        img {
+            width: 300px;
+            border-radius: 10px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        img:hover {
+            transform: rotateY(18deg) rotateX(8deg) scale(1.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+    <img src="https://picsum.photos/400/300" alt="Imagen">
+</div>
+
+</body>
+</html>
