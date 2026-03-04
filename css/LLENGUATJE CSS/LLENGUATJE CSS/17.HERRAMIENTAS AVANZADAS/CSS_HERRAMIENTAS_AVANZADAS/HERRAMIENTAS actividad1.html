@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .sol {
+            width: 150px;
+            height: 150px;
+            background: yellow;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .luna {
+            width: 150px;
+            height: 150px;
+            background: gray;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: -200px;
+            animation: eclipse 5s infinite linear;
+        }
+
+        @keyframes eclipse {
+            0%   { transform: translateX(0); }
+            50%  { transform: translateX(200px); }
+            100% { transform: translateX(0); }
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sol">
+    <div class="luna"></div>
+</div>
+
+</body>
+</html>

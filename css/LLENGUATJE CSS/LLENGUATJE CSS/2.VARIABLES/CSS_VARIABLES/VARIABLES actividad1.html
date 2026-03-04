@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hipervínculos y Variables CSS</title>
+
+    <style>
+        :root {
+            --color-enlace: #c0392b;
+        }
+
+        h1 {
+            color: var(--color-enlace);
+            font-family: Arial, sans-serif;
+        }
+
+        a {
+            color: var(--color-enlace);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Mis Sitios Preferidos</h1>
+
+<p>
+    Aquí tienes algunos enlaces interesantes:
+    <a href="https://www.duckduckgo.com" target="_blank">DuckDuckGo</a>,
+    <a href="https://www.britannica.com" target="_blank">Britannica</a>,
+    <a href="https://www.vimeo.com" target="_blank">Vimeo</a>.
+</p>
+
+</body>
+</html>

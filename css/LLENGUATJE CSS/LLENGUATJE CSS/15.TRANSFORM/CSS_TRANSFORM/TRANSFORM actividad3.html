@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mezcla de colores</title>
+    <style>
+        .contenedor {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 50px;
+        }
+
+        .circulo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            transition: transform 0.4s ease;
+        }
+
+        .rojo {
+            background-color: red;
+        }
+
+        .azul {
+            background-color: rgba(0, 0, 255, 0.5);
+        }
+
+        .azul:hover {
+            transform: translateX(-100px);
+        }
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="circulo rojo"></div>
+    <div class="circulo azul"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Noria simple</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #222;
+        }
+
+        .noria {
+            width: 250px;
+            height: 250px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            position: relative;
+            animation: girar 20s linear infinite;
+        }
+
+        .cabina {
+            width: 30px;
+            height: 30px;
+            background: #ff5252;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .c1 { top: -15px; left: 50%; transform: translateX(-50%); }
+        .c2 { top: 50%; right: -15px; transform: translateY(-50%); }
+        .c3 { bottom: -15px; left: 50%; transform: translateX(-50%); }
+        .c4 { top: 50%; left: -15px; transform: translateY(-50%); }
+        .c5 { top: 25px; right: 25px; }
+        .c6 { bottom: 25px; right: 25px; }
+        .c7 { bottom: 25px; left: 25px; }
+        .c8 { top: 25px; left: 25px; }
+
+        .eje {
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes girar {
+            from { transform: rotate(0deg); }
+            to   { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="noria">
+    <div class="cabina c1"></div>
+    <div class="cabina c2"></div>
+    <div class="cabina c3"></div>
+    <div class="cabina c4"></div>
+    <div class="cabina c5"></div>
+    <div class="cabina c6"></div>
+    <div class="cabina c7"></div>
+    <div class="cabina c8"></div>
+    <div class="eje"></div>
+</div>
+
+</body>
+</html>

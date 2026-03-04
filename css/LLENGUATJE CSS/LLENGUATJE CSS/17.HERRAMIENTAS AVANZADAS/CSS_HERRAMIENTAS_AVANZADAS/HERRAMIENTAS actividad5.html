@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Loading animado</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        .loader {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 6px solid rgba(255,255,255,0.15);
+            border-top-color: #ffb347;
+            border-right-color: #ff6b6b;
+            border-bottom-color: #4ecdc4;
+            animation: spin 1.2s linear infinite;
+            position: relative;
+        }
+
+        .loader::after {
+            content: "";
+            position: absolute;
+            inset: 12px;
+            border-radius: 50%;
+            border: 3px dashed rgba(255,255,255,0.4);
+            animation: spinReverse 2s linear infinite;
+        }
+
+        .texto {
+            margin-top: 15px;
+            letter-spacing: 2px;
+            font-size: 14px;
+            text-transform: uppercase;
+            animation: parpadeo 1.5s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes spinReverse {
+            to { transform: rotate(-360deg); }
+        }
+
+        @keyframes parpadeo {
+            0%, 100% { opacity: 0.3; }
+            50%      { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="loader"></div>
+<div class="texto">Cargando...</div>
+
+</body>
+</html>

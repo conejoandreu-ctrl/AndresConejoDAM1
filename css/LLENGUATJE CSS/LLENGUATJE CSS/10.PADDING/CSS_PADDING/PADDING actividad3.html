@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .faq {
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .pregunta {
+            font-size: 18px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .respuesta {
+            font-size: 15px;
+            color: #444;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .open .respuesta {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="faq">
+
+    <div class="item">
+        <p class="pregunta">¿Qué métodos de pago se ofrecen?</p>
+        <p class="respuesta">Aquí iría la respuesta si estuviera abierta.</p>
+    </div>
+
+    <div class="item open">
+        <p class="pregunta">¿Cómo puedo cambiarme a un plan diferente?</p>
+        <p class="respuesta">
+            Puedes cambiarte a un nuevo plan en cualquier momento; para ello, entra en la página de Facturación de tu cuenta. 
+            Selecciona el plan al que deseas cambiarte y podrás empezar a usar las nuevas funciones de inmediato.
+        </p>
+    </div>
+
+    <div class="item">
+        <p class="pregunta">¿Puedo optar por comprar créditos?</p>
+        <p class="respuesta">Aquí iría la respuesta si estuviera abierta.</p>
+    </div>
+
+    <div class="item">
+        <p class="pregunta">¿Hay precios especiales para quienes envían grandes volúmenes de correos electrónicos?</p>
+        <p class="respuesta">Aquí iría la respuesta si estuviera abierta.</p>
+    </div>
+
+    <div class="item">
+        <p class="pregunta">¿Qué sucede si llego al límite de envíos o contactos?</p>
+        <p class="respuesta">Aquí iría la respuesta si estuviera abierta.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
