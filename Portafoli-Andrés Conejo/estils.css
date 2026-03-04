@@ -1,6 +1,4 @@
-/* ------------------------------ */
-/* ESTILS GENERALS                */
-/* ------------------------------ */
+
 
 * {
     margin: 0;
@@ -14,7 +12,7 @@ body {
     color: #222;
 }
 
-/* Enllaços */
+
 a {
     color: #003366;
     text-decoration: none;
@@ -24,9 +22,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ------------------------------ */
-/* CAPÇALERA I MENÚ               */
-/* ------------------------------ */
+
 
 header {
     background-color: #003366;
@@ -52,9 +48,7 @@ nav a:hover {
     background-color: #0055aa;
 }
 
-/* ------------------------------ */
-/* CONTINGUT PRINCIPAL            */
-/* ------------------------------ */
+
 
 main {
     max-width: 900px;
@@ -71,9 +65,7 @@ section {
     margin-bottom: 2rem;
 }
 
-/* ------------------------------ */
-/* PRESENTACIÓ INICIAL            */
-/* ------------------------------ */
+
 
 .presentacio {
     display: flex;
@@ -97,7 +89,7 @@ section {
     border: 2px solid #003366;
 }
 
-/* Botó senzill */
+
 .boto {
     display: inline-block;
     margin-top: 1rem;
@@ -111,9 +103,6 @@ section {
     background-color: #0077dd;
 }
 
-/* ------------------------------ */
-/* TAULES                         */
-/* ------------------------------ */
 
 table {
     width: 100%;
@@ -130,17 +119,13 @@ th {
     background-color: #e0e0e0;
 }
 
-/* ------------------------------ */
-/* LLISTES                        */
-/* ------------------------------ */
+
 
 ul, ol {
     margin-left: 1.5rem;
 }
 
-/* ------------------------------ */
-/* FORMULARI                      */
-/* ------------------------------ */
+
 
 .formulari-contacte {
     background-color: white;
@@ -180,9 +165,7 @@ ul, ol {
     background-color: #2ecc71;
 }
 
-/* ------------------------------ */
-/* WIREFRAMES                     */
-/* ------------------------------ */
+
 
 .galeria-wireframes {
     display: flex;
@@ -210,9 +193,6 @@ ul, ol {
     margin-bottom: 0.5rem;
 }
 
-/* ------------------------------ */
-/* PEU DE PÀGINA                  */
-/* ------------------------------ */
 
 footer {
     background-color: #003366;
@@ -234,9 +214,7 @@ footer .xarxes a {
     color: white;
 }
 
-/* ------------------------------ */
-/* RESPONSIVITAT                  */
-/* ------------------------------ */
+
 
 @media (max-width: 700px) {
     nav ul {
